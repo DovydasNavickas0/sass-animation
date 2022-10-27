@@ -1,0 +1,66 @@
+.bark{
+    position: absolute;
+    height: 350px;
+    width: 60px;
+    background-color: $bark;
+    bottom: -25px;
+    left: 440px;
+}
+
+.leafs{
+    position: absolute;
+    height: 220px;
+    width: 300px;
+    border-radius: 30%;
+    background-color: $leafs;
+    bottom: 310px;
+    left: 325px;
+}
+
+.bark{
+    position: absolute;
+    height: 100px;
+    width: 30px;
+    background-color: $bark;
+    bottom: -25px;
+    left: 440px;
+}
+
+.leafs{
+    position: absolute;
+    height: 110px;
+    width: 150px;
+    border-radius: 30%;
+    background-color: $leafs;
+    bottom: 70px;
+    left: 380px;
+}
+
+position
+310-90= 240
+380-325 = 55
+
+leafs / 2
+
+bark
+-250
+60/2
+
+.bark{
+    position: absolute;
+    height: 125px;
+    width: 30px;
+    background-color: $bark;
+    bottom: -25px;
+    left: 440px;
+}
+
+.leafs{
+    position: absolute;
+    height: 110px;
+    width: 150px;
+    border-radius: 30%;
+    background-color: $leafs;
+    bottom: 310px;
+    left: 325px;
+}

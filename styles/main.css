@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  background-color: #3DC9F3;
+}
+
+.container {
+  height: 100%;
+}
+
+.sun {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #F9C025;
+  top: 20px;
+  left: 40px;
+}
+
+.slidein {
+  -webkit-transform: translateX(-220px);
+          transform: translateX(-220px);
+  -webkit-animation: slidein 3s ease-out forwards;
+          animation: slidein 3s ease-out forwards;
+}
+
+@-webkit-keyframes slidein {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes slidein {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.bark {
+  position: absolute;
+  height: 350px;
+  width: 60px;
+  background-color: #7B5113;
+  bottom: -25px;
+  left: 440px;
+}
+
+.leafs {
+  position: absolute;
+  height: 220px;
+  width: 300px;
+  border-radius: 30%;
+  background-color: #18AE00;
+  bottom: 310px;
+  left: 325px;
+}
+
+.grow {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-animation: grow 10s ease-out;
+          animation: grow 10s ease-out;
+}
+
+@-webkit-keyframes grow {
+  100% {
+  }
+}
+
+@keyframes grow {
+  100% {
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,62 @@
+@import 'var';
+
+
+body{
+    height: 100vh;
+    background-color: $blue;
+}
+
+.container{
+    height: 100%;
+}
+
+.sun{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: $sun;
+    top: 20px;
+    left: 40px;
+    
+}
+
+.slidein{
+    transform: translateX(-220px);
+    animation: slidein 3s ease-out forwards
+}
+
+@keyframes slidein{
+    100% { transform: translate(0); }
+}
+
+.bark{
+    position: absolute;
+    height: 350px;
+    width: 60px;
+    background-color: $bark;
+    bottom: -25px;
+    left: 440px;
+}
+
+.leafs{
+    position: absolute;
+    height: 220px;
+    width: 300px;
+    border-radius: 30%;
+    background-color:  $leafs;
+    bottom: 310px;
+    left: 325px;
+}
+
+.grow{
+    transform: translateY(100px);
+    animation: grow 10s ease-out ;
+}
+
+
+@keyframes grow {
+    100%{
+         
+    }
+}
