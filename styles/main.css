@@ -6,8 +6,7 @@ body {
 .container {
   height: 100%;
 }
-
-.sun {
+.container .sun {
   position: absolute;
   height: 150px;
   width: 150px;
@@ -16,61 +15,107 @@ body {
   top: 20px;
   left: 40px;
 }
-
-.slidein {
-  -webkit-transform: translateX(-220px);
-          transform: translateX(-220px);
+.container .slidein {
+  transform: translateX(-220px);
   -webkit-animation: slidein 3s ease-out forwards;
           animation: slidein 3s ease-out forwards;
 }
-
 @-webkit-keyframes slidein {
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @keyframes slidein {
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
-.bark {
+.container .flower {
   position: absolute;
-  height: 350px;
-  width: 60px;
-  background-color: #7B5113;
-  bottom: -25px;
-  left: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  bottom: 0%;
 }
-
-.leafs {
-  position: absolute;
-  height: 220px;
-  width: 300px;
-  border-radius: 30%;
+.container .flower_head {
+  height: 7rem;
+  width: 7rem;
+  background-color: #a100c2;
+  border-radius: 50%;
+}
+.container .flower_stem {
+  height: 12rem;
+  width: 0.5rem;
+  max-height: 0;
   background-color: #18AE00;
-  bottom: 310px;
-  left: 325px;
 }
-
-.grow {
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
-  -webkit-animation: grow 10s ease-out;
-          animation: grow 10s ease-out;
+.container .flower_stem::after {
+  content: "";
+  margin-left: 0.5;
+  margin-top: 1rem;
+  width: 3em;
+  height: 3em;
+  display: block;
+  background: #0C8A00;
+  border-radius: 2em 0 2em 0em;
 }
-
-@-webkit-keyframes grow {
+.container .flower .grow-12 {
+  -webkit-animation: grow-12 2s 0.5s ease-in-out forwards;
+          animation: grow-12 2s 0.5s ease-in-out forwards;
+}
+@-webkit-keyframes grow-12 {
   100% {
+    max-height: 14rem;
   }
 }
-
-@keyframes grow {
+@keyframes grow-12 {
   100% {
+    max-height: 14rem;
   }
 }
-/*# sourceMappingURL=main.css.map */
+.container .flower .pulse {
+  -webkit-animation: pulse 1s 0.5s ease-in-out infinite alternate;
+          animation: pulse 1s 0.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.container h1 {
+  padding-top: 20vh;
+  font-size: 8vw;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px hsla(100deg, 0%, 30%, 0.5);
+  z-index: 1000;
+  margin: 0;
+}
+.container .fadein {
+  opacity: 0;
+  -webkit-animation: fadein 1s 2s ease-in forwards;
+          animation: fadein 1s 2s ease-in forwards;
+}
+@-webkit-keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
